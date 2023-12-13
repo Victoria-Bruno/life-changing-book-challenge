@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Invisible Women by Caroline Criado Perez</title>
+
+    <!-- All installed packages -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <style>
+      :root {
+        --main-color: #3ad7bc;
+        --details-color: #f40202;
+        --main-font: "Figtree", sans-serif;
+        --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        --hover-color: #fb2576;
+      }
+
+      body {
+        font-family: var(--main-font);
+      }
+
+      h1 {
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-weight: 600;
+        text-align: center;
+        color: var(--main-color);
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-weight: 600;
+        text-align: center;
+        color: var(--main-color);
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .underline {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--main-color);
+        text-decoration-thickness: 2px;
+      }
+
+      #book-image {
+        width: 100%;
+        align-items: center;
+      }
+      .intro {
+        display: block;
+        text-align: center;
+        margin: 70px auto;
+      }
+
+      #summary {
+        font-size: 30px;
+      }
+
+      .button-group {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      a:link,
+      a:visited {
+        background-color: var(--details-color);
+        color: var(--main-color);
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+        padding: 15px;
+        margin: 10px 20px;
+        width: 150px;
+        display: inline-block;
+      }
+
+      .button-group a:hover {
+        background-color: var(--main-color);
+        color: var(--details-color);
+      }
+
+      .sections a:hover {
+        background-color: var(--main-color);
+        color: var(--details-color);
+      }
+
+      .container {
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      #book,
+      #thoughts {
+        font-size: 25px;
+        /* margin: 20px 107px;
+        text-align: center; */
+      }
+
+      .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 25px;
+      }
+
+      .quote {
+        display: inline-block;
+        width: 100%; /* Each quote occupies full width */
+        white-space: normal; /* Allow text wrapping inside quotes */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Life-Changing Book Challenge</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="center-image"></div>
+          <img
+            src="./book.png"
+            alt="Invisible Women"
+            id="book-image"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <div class="intro">
+            <h2 class="underline">Invisible Women</h2>
+            <p id="summary">
+              Imagine a world where <b>your phone is too big for your hand</b>,
+              where your doctor prescribes
+              <b>a drug that is wrong for your body</b>, where in a car accident
+              you are <b>47% more likely to be seriously injured</b>, where
+              every week the
+              <b>countless hours of work you do are not recognised or valued</b
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <a href="#book">Book</a>
+      <a href="#author">Author</a>
+      <a href="#quotes">Quotes</a>
+      <a href="#thoughts">Thoughts</a>
+      <a
+        href="https://www.amazon.co.uk/Invisible-Women-Exposing-World-Designed/dp/1784706280/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="
+        target="_blank"
+        >Buy</a
+      >
+    </div>
+
+    <div class="sections">
+      <div class="container mt-5">
+        <div
+          class="row pt-5 pb-5"
+          id="book"
+        >
+          <div class="col-12">
+            <h2>Book</h2>
+            <h3>Invisible Women: Data Bias in a World Designed for Men</h3>
+            <p>
+              Invisible Women shows us how, in a world largely built for and by
+              men, <b>we are systematically ignoring half the population</b>. It
+              exposes the gender data gap -
+              <b
+                >a gap in our knowledge that is at the root of perpetual,
+                systemic discrimination against women</b
+              >, and that has created a pervasive but invisible bias with a
+              profound effect on women&apos; lives. From government policy and
+              medical research, to technology, workplaces, urban planning and
+              the media,
+              <b>Invisible Women reveals the biased data that excludes women</b
+              >. Award-winning campaigner and writer Caroline Criado Perez
+              brings together for the first time an impressive range of
+              <b
+                >case studies, stories and new research from across the world</b
+              >
+              that illustrate the hidden ways in which women are forgotten, and
+              the impact this has on their health and well-being. In making the
+              case for change, this powerful and provocative book will make you
+              see the world anew.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row pt-5 pb-5"
+          id="author"
+        >
+          <div class="col-md-6">
+            <h2>Author</h2>
+            <p>
+              <b>Caroline Emma Criado Perez</b> (born 1984) is a British
+              feminist author, journalist and activist. Her first national
+              campaign, the Women's Room project, aimed to increase the presence
+              of female experts in the media. She opposed the removal of the
+              only woman from British banknotes (other than The Queen), leading
+              to the Bank of England's swift announcement that the image of Jane
+              Austen would appear on the £10 note by 2017. That campaign led to
+              sustained harassment on the social networking website Twitter of
+              Criado Perez and other women; as a result, Twitter announced plans
+              to improve its complaint procedures. Her most recent campaign was
+              for a sculpture of a woman in Parliament Square; the statue of
+              Millicent Fawcett was unveiled in April 2018, as part of the
+              centenary celebrations of the winning of women's suffrage in the
+              United Kingdom. Her 2019 book Invisible Women: Exposing Data Bias
+              in a World Designed for Men was a Sunday Times bestseller.
+              (Wikipedia)
+            </p>
+            <div class="mt-2 text-center">
+              <a
+                href="https://en.wikipedia.org/wiki/Caroline_Criado_Perez"
+                class="primary-link"
+                title="Wikipedia"
+                target="_blank"
+                >Full Bio</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <img
+              src="./caroline.jpg"
+              alt="Caroline Criado Perez"
+              class="img-fluid rounded d-none d-md-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div
+        class="row pt-5 pb-5"
+        id="thoughts"
+      >
+        <div class="col-12">
+          <h2>My Thoughts</h2>
+          <p>
+            This book is a must read for ANY HUMAN. Don’t let the title fool
+            you, it is not a book that concerns only women. It literally
+            revolutionised my view of the world. <br /><br />
+            Do you drive a car? Do you use public transportation? Do you run
+            errands through the city? Do you use public toilets? Then the book
+            is for you. Whether you work in academia, healthcare, business,
+            politics… it covers it all. <br /><br />
+            As a woman in tech I get bombarded by campaigns about women in
+            leadership, mentorship programs for young girls in STEM, or women
+            networks. I never really got the point of them as much as after
+            reading the entire book. All humans should take the mission of
+            addressing and acting on data bias at heart, either by taking
+            initiative or actively listening and supporting, because it really
+            does concerns us all. And personally I understand more the
+            importance of representation. <br /><br />
+
+            Big thanks to the author Caroline for her terrific work to unveil
+            and collect all this information, investigating such diverse sectors
+            and domains. She’s a true inspiration for me, and I hope to
+            contribute to her work by exposing and acting on data bias in my
+            field.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="scroll-container"
+      id="quotes"
+    >
+      <h2>Quotes</h2>
+      <div class="row">
+        <section class="quote-carousel">
+          <div class="quote">
+            <p>
+              “Perhaps most galling from a gender-data-gap perspective was the
+              finding that females aren&apos;t even included in animal studies
+              on female-prevalent diseases. Women are 70% more likely to suffer
+              depression than men, for instance, but animal studies on brain
+              disorders are five times as likely to be done on male animals.” ―
+              Caroline Criado Pérez, Invisible Women: Data Bias in a World
+              Designed for Men
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “So with that substantial sex difference in mind: how many drugs
+              that would work for women are we ruling out at phase one trials
+              just because they don’t work in men?”
+            </p>
+          </div>
+
+          <div class="quote">
+            <p>
+              “since the 1974 Health and Safety at Work Act, workplace
+              fatalities in the UK have dropped by 85%. But there is a caveat to
+              this good news story. While serious injuries at work have been
+              decreasing for men, there is evidence that they have been
+              increasing among women.7 The rise in serious injuries among female
+              workers is linked to the gender data gap: with occupational
+              research traditionally having been focused on male-dominated
+              industries, our knowledge of how to prevent injuries in women is
+              patchy to say the least.”
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “The formula to determine standard office temperature was
+              developed in the 1960s around the metabolic resting rate of the
+              average forty-year-old, 70 kg man.1 But a recent study found that
+              ‘the metabolic rate of young adult females performing light office
+              work is significantly lower’ than the standard values for men
+              doing the same type of activity. In fact, the formula may
+              overestimate female metabolic rate by as much as 35%, meaning that
+              current offices are on average five degrees too cold for women.
+              Which leads to the odd sight of female office workers wrapped up
+              in blankets in the New York summer while their male colleagues
+              wander around in summer clothes.”
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “Employment procedures that are unwittingly biased towards men are
+              an issue in promotion as well as hiring. A classic example comes
+              from Google, where women weren’t nominating themselves for
+              promotion at the same rate as men. This is unsurprising: women are
+              conditioned to be modest, and are penalised when they step outside
+              of this prescribed gender norm.”
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “But male universality is also a cause of the gender data gap:
+              because women aren't seen and aren't remembered, because male data
+              makes up the majority of what we know, what is male comes to be
+              seen as universal. It leads to the positioning of women, half of
+              the global population, as a minority. With a niche identity and a
+              subjective point of view. In such a framing, women are set up to
+              be forgettable Ignorable. Dispensable - from culture, from
+              history, from data. And so, women become invisible.”
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “male bias is so firmly embedded in our psyche that even genuinely
+              gender-neutral words are read as male.”
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “Failing to collect data on women and their lives means that we
+              continue to naturalise sex and gender discrimination – while at
+              the same time somehow not seeing any of this discrimination. Or
+              really, we don’t see it because we naturalise it – it is too
+              obvious, too commonplace, too much just the way things are to
+              bother commenting on.”
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Packages-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const quoteContainer = document.querySelector(".quote-carousel");
+        const quotes = document.querySelectorAll(".quote");
+        const totalQuotes = quotes.length;
+        const quoteWidth = quoteContainer.offsetWidth;
+        const marginBetweenQuotes = 40; // Adjust margin between quotes
+
+        // Calculate the total width of the carousel with margins
+        const carouselWidth = totalQuotes * (quoteWidth + marginBetweenQuotes);
+
+        gsap.set(quoteContainer, {
+          width: carouselWidth,
+        });
+
+        quotes.forEach((quote, index) => {
+          gsap.set(quote, {
+            width: quoteWidth,
+            marginRight: marginBetweenQuotes + "px",
+          });
+        });
+
+        let currentIndex = 0;
+        let isScrolling = false;
+
+        function scrollQuote() {
+          isScrolling = true;
+
+          gsap.to(quoteContainer, {
+            x: -currentIndex * (quoteWidth + marginBetweenQuotes),
+            duration: 2,
+            ease: "sine.out",
+            onComplete: function () {
+              setTimeout(function () {
+                isScrolling = false;
+              }, 1500); // Pause duration between quotes
+            },
+          });
+        }
+
+        document.addEventListener("wheel", function (event) {
+          if (!isScrolling) {
+            if (event.deltaY > 0 && currentIndex < totalQuotes - 1) {
+              currentIndex++;
+            } else if (event.deltaY < 0 && currentIndex > 0) {
+              currentIndex--;
+            }
+
+            // Ensure the currentIndex aligns with the container width
+            currentIndex = Math.min(Math.max(currentIndex, 0), totalQuotes - 1);
+
+            scrollQuote();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
